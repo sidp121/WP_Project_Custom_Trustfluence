@@ -1,0 +1,106 @@
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    justify-content: space-around;
+    text-align: center;
+    width: 10em;
+    font-size: 60px;
+}
+
+.star-rating input {
+  display:none !important;
+}
+
+.star-rating label {
+    color: #ccc;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.star-rating :checked ~ label {
+  color:#0445af;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#0445af;
+}
+
+.main-section  {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 0;
+    
+}
+.rating-head h1 {
+    line-height: 50px;
+    margin: 0;
+}
+.text-field {
+    width: 100%;
+    -webkit-appearance: auto !important;
+    line-height: 30px;
+    border-bottom: 1px solid;
+    border-color: #b5c9e8;
+}
+.less-then-from{
+    padding-top:50px;
+}
+.second-step-form , .third-step-form , .fourth-step-form {
+    padding: 10px 0;
+}
+button[type=submit].btn-submit {
+    border: 1px solid transparent;
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+    padding: 0px 26px;
+    min-height: 40px;
+    background-color: rgb(4, 69, 175);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.text-field button, input, optgroup, select, textarea {
+    color: unset;
+    font: initial;
+    line-height: normal;
+    border:none;
+}
+button.btn-submit {
+    margin-top: 30px;
+}
+.thank-you {
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 25px 90px 1px;
+    text-align: center;
+    background: #f9f9f9;
+}
+.thank-you h4{
+  font-size: 22px;
+}
+#feedback_form input[required=required]{
+  border: 1px solid red;
+}
+span.cs-required {
+    color: red;
+}
+.token-expired {
+    padding: 30px;
+    width: 800px;
+    background: gainsboro;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.token-expired h2{
+    font-size: 30px;
+    color: red;
+    margin-bottom: 0;
+}
